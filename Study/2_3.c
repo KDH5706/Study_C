@@ -80,7 +80,7 @@ int main(void)
 	int i;
 	pa = (int*)malloc(sizeof(ary));
 	if (pa == NULL)
-		exit(1);
+		exit(0);
 	else
 	{
 		for (i = 0; i < 5; i++)
