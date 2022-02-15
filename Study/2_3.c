@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#pragma warning(disable:6031)
+
 //
 //void print_str(char* *pps, int cnt);
 //
@@ -73,28 +75,67 @@
 //	return 0;
 //}
 
+//int main(void)
+//{
+//	int* prime;
+//	int num;
+//	int check = 1;
+//
+//	printf("숫자 입력 : ");
+//	scanf("%d", &num);
+//
+//	prime = (int*)calloc(num , sizeof(int));
+//	if (prime == NULL)
+//		exit(1);
+//
+//	for (int i = 0; i < num-1; i++)
+//	{
+//		prime[i] = i + 2;
+//		check = 1;
+//
+//		if (prime[i] != 2)
+//		{
+//			for (int j = 2; j < prime[i]; j++)
+//			{
+//				if (prime[i] % j == 0)
+//				{
+//					printf("   X");
+//					check = 0;
+//					break;
+//				}
+//			}
+//		}
+//
+//		if (check == 1)
+//			printf("%4d", prime[i]);
+//
+//		if (i % 5 == 4)
+//			printf("\n");
+//	}
+//
+//	free(prime);
+//
+//	return 0;
+//}
+
+//int main(void)
+//{
+//	char ani[20];
+//	char why[80];
+//	printf("좋아하는 동물 : ");
+//	scanf("%s", &ani);
+//	getchar();
+//	printf("좋아하는 이유 : ");
+//	fgets(why, sizeof(why), stdin);
+//	printf("%s is %s", ani, why);
+//	return 0;
+//}
+
 int main(void)
 {
-	int ary[5] = { 1,2,3,4,5 };
-	int* pa, * pb, * pc;
-	int i;
-	pa = (int*)malloc(sizeof(ary));
-	if (pa == NULL)
-		exit(0);
-	else
-	{
-		for (i = 0; i < 5; i++)
-			pa[i] = ary[i];
-	}
-
-	pb = (int*)calloc(pa[3], sizeof(int));
-	pc = (int*)realloc(NULL, pa[4]);
-
-	printf("%d,%d,%d", sizeof(pa), sizeof(pb), sizeof(pc));
-
-	free(pa);
-	free(pb);
-	free(pc);
+	char* ps = "applepie";
+	ps += 5;
+	printf("%s", ps);
 
 	return 0;
 }
