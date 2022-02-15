@@ -131,11 +131,12 @@
 //	return 0;
 //}
 
-int main(void)
-{
-	char* ps = "applepie";
-	ps += 5;
-	printf("%s", ps);
+//int main(void)
+//{
+//	char* ps = "applepie";
+//	ps += 5;
+//	printf("%s", ps);
+//
+//	return 0;
+//}
 
-	return 0;
-}
