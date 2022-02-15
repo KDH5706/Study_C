@@ -140,3 +140,24 @@
 //	return 0;
 //}
 
+int main(void)
+{
+	int ch, cnt;
+	int max = 0;
+	
+	while (1)
+	{
+		cnt = 1;
+
+		ch = getchar();
+		if (ch == EOF)	break;
+
+		while (getchar() != '\n')	cnt++;
+
+		if (max < cnt)	max = cnt;
+	}
+
+	printf("가장 긴 단어의 길이 : %d\n", max);
+
+	return 0;
+}
