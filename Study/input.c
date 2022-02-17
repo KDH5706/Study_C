@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+#pragma warning(disable:6031)
 extern int count;
 int total = 0;
 

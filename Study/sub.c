@@ -1,7 +1,10 @@
-extern int count;
-extern int total;
+static int key;
 
-double average()
+void set_key(int val)
 {
-	return (total / (double)count);
+	key = val;
+}
+int get_key(void)
+{
+	return key;
 }
