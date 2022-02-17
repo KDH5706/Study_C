@@ -46,8 +46,8 @@ void insert(int input) {
 	NODE* newnode, * cur;
 
 	newnode = (NODE*)malloc(sizeof(NODE));
-	newnode->next = NULL;
 	newnode->key = input;
+	newnode->next = NULL;
 	cur = start;
 
 	if (start == NULL) {
